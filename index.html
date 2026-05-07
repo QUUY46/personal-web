@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo | Personal Photography Site</title>
+    <meta
+      name="description"
+      content="Leo 的个人摄影网站，展示 selected works、城市观察与影像笔记。"
+    />
+    <link rel="stylesheet" href="styles/site.css" />
+    <script defer src="scripts/site.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="site-mark" href="index.html">Leo</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="gallery/index.html">Gallery</a>
+          <a href="about.html">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal Photography Site</p>
+            <h1>城市、夜色、日常细节。</h1>
+            <p class="lead">
+              Leo，based in Hong Kong。这里放摄影作品，也放少量文字。第一版先保持克制，只展示真正想保留的内容。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-solid" href="gallery/index.html">查看作品</a>
+              <a class="button button-ghost" href="about.html">了解我</a>
+            </div>
+          </div>
+
+          <div class="hero-visual hero-photo-wrap">
+            <div class="photo-slot photo-tall tone-night" data-photo-slot>
+              <img
+                src="photos/hero/main.jpg"
+                alt="首页主照片"
+                loading="eager"
+                decoding="async"
+                data-photo-image
+              />
+              <div class="photo-fallback">
+                <span>Main Photo</span>
+                <small>把照片放到 photos/hero/main.jpg</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro-grid reveal">
+          <div class="intro-card">
+            <p class="section-kicker">Focus</p>
+            <h2>Street, architecture, light.</h2>
+            <p>
+              这不是商业作品集首页。它更接近 personal archive，即长期留下来的视觉片段。
+            </p>
+          </div>
+          <div class="intro-card">
+            <p class="section-kicker">Format</p>
+            <h2>Photo first, text second.</h2>
+            <p>
+              照片是主角，文字只负责定边界。每个系列只保留一句说明，避免页面太重。
+            </p>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="section-kicker">Selected Series</p>
+            <h2>先放两组作品，结构跑通。</h2>
+          </div>
+
+          <div class="series-grid">
+            <article class="series-card">
+              <a href="gallery/hong-kong-street.html" class="series-media">
+                <div class="photo-slot tone-street photo-wide" data-photo-slot>
+                  <img
+                    src="photos/hong-kong-street/cover.jpg"
+                    alt="Hong Kong Street 2025 封面"
+                    loading="lazy"
+                    decoding="async"
+                    data-photo-image
+                  />
+                  <div class="photo-fallback">
+                    <span>Series Cover</span>
+                    <small>photos/hong-kong-street/cover.jpg</small>
+                  </div>
+                </div>
+              </a>
+              <div class="series-meta">
+                <p class="series-label">Series 01</p>
+                <h3><a href="gallery/hong-kong-street.html">Hong Kong Street 2025</a></h3>
+                <p>街头移动、晨间光线、拥挤和留白。</p>
+              </div>
+            </article>
+
+            <article class="series-card">
+              <a href="gallery/city-night.html" class="series-media">
+                <div class="photo-slot tone-amber photo-wide" data-photo-slot>
+                  <img
+                    src="photos/city-night/cover.jpg"
+                    alt="City Night Fragments 封面"
+                    loading="lazy"
+                    decoding="async"
+                    data-photo-image
+                  />
+                  <div class="photo-fallback">
+                    <span>Series Cover</span>
+                    <small>photos/city-night/cover.jpg</small>
+                  </div>
+                </div>
+              </a>
+              <div class="series-meta">
+                <p class="series-label">Series 02</p>
+                <h3><a href="gallery/city-night.html">City Night Fragments</a></h3>
+                <p>雨后街口、窗内灯光、夜间反射面。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="note-strip reveal">
+          <p class="section-kicker">Short Note</p>
+          <p class="note-text">
+            我希望这个网站以后成为一个稳定入口：不只是分享照片，也记录判断和偏好如何变化。
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Leo</p>
+        <p>Static site. Free to host. Easy to expand.</p>
+      </footer>
+    </div>
+  </body>
+</html>
