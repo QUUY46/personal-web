@@ -9,6 +9,7 @@
       content="WQ 的个人摄影网站。"
     />
     <link rel="stylesheet" href="styles/site.css" />
+    <link rel="preload" as="image" type="image/webp" href="photos/hero/main.webp" imagesrcset="photos/hero/main-800.webp 800w, photos/hero/main.webp 1800w" imagesizes="(min-width: 900px) 38rem, calc(100vw - 2rem)" fetchpriority="high" />
     <script defer src="scripts/site.js"></script>
   </head>
   <body>
@@ -33,6 +34,8 @@
                 <source type="image/jpeg" srcset="photos/hero/main-800.jpg 800w, photos/hero/main.jpg 1800w" sizes="(min-width: 900px) 38rem, calc(100vw - 2rem)" />
                 <img
                   src="photos/hero/main.jpg"
+                  width="1800"
+                  height="1800"
                   alt="首页主照片"
                   loading="eager"
                   decoding="async"

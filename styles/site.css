@@ -484,6 +484,13 @@ p {
   column-gap: 0.85rem;
 }
 
+.photo-wall,
+.page-intro,
+.section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1200px;
+}
+
 .photo-tile {
   break-inside: avoid;
   margin: 0 0 0.85rem;
