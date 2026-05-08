@@ -28,13 +28,18 @@
         <section class="hero hero-only reveal">
           <div class="hero-visual hero-photo-wrap">
             <div class="photo-slot photo-tall tone-night" data-photo-slot>
-              <img
-                src="photos/hero/main.jpg"
-                alt="首页主照片"
-                loading="eager"
-                decoding="async"
-                data-photo-image
-              />
+              <picture>
+                <source type="image/webp" srcset="photos/hero/main-800.webp 800w, photos/hero/main.webp 1800w" sizes="(min-width: 900px) 38rem, calc(100vw - 2rem)" />
+                <source type="image/jpeg" srcset="photos/hero/main-800.jpg 800w, photos/hero/main.jpg 1800w" sizes="(min-width: 900px) 38rem, calc(100vw - 2rem)" />
+                <img
+                  src="photos/hero/main.jpg"
+                  alt="首页主照片"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                  data-photo-image
+                />
+              </picture>
               <div class="photo-fallback">
                 <span>Main Photo</span>
                 <small>把照片放到 photos/hero/main.jpg</small>

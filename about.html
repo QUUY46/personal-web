@@ -35,7 +35,11 @@
 
         <section class="photo-wall reveal">
           <figure class="photo-tile">
+          <picture>
+            <source type="image/webp" srcset="photos/about/photo-01-800.webp 800w, photos/about/photo-01.webp 1791w" sizes="(min-width: 1100px) 17.33rem, (min-width: 700px) 24rem, calc(100vw - 2rem)" />
+            <source type="image/jpeg" srcset="photos/about/photo-01-800.jpg 800w, photos/about/photo-01.jpg 1791w" sizes="(min-width: 1100px) 17.33rem, (min-width: 700px) 24rem, calc(100vw - 2rem)" />
             <img src="photos/about/photo-01.jpg" alt="About 01" loading="lazy" decoding="async" />
+          </picture>
           </figure>
         </section>
       </main>

@@ -54,6 +54,11 @@ img {
   display: block;
 }
 
+picture {
+  display: block;
+  width: 100%;
+}
+
 .page-shell {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
