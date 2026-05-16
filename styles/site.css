@@ -160,6 +160,15 @@ picture {
   padding: 1.5rem;
 }
 
+.about-card {
+  display: flex;
+  align-items: center;
+}
+
+.about-card .note-text {
+  max-width: 18rem;
+}
+
 .section-kicker,
 .series-label {
   margin: 0 0 0.5rem;
@@ -309,6 +318,56 @@ p {
 
 .section {
   margin-bottom: 4rem;
+}
+
+.landscape-feature {
+  margin-bottom: 2.5rem;
+}
+
+.landscape-hero {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 48rem);
+  margin-inline: auto;
+}
+
+.landscape-feature-media {
+  margin: 0;
+}
+
+.landscape-feature .photo-tile {
+  width: 100%;
+}
+
+.landscape-arrow {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 252, 245, 0.9);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.landscape-arrow:hover {
+  background: var(--accent-soft);
+}
+
+.landscape-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+  background: rgba(255, 252, 245, 0.9);
+}
+
+.landscape-arrow:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .section-heading {
@@ -478,6 +537,11 @@ p {
 
   .site-footer {
     border-radius: 1.5rem;
+  }
+
+  .landscape-arrow {
+    width: 2.6rem;
+    height: 2.6rem;
   }
 
   h1 {
